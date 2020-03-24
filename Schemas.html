@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phones</title>
+</head>
+<body>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.valentinethornsby.telephonesms.MainActivity">
+
+    <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+    android:inputType="phone"></EditText>
+
+    <Button
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="call"
+            android:text="Call"></Button>
+
+</LinearLayout>
+</body>
+</html>
+
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-feature android:name="android.hardware.telephony" android:required="false" />
